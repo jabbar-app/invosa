@@ -299,10 +299,10 @@
       <p class="text-lg sm:text-xl text-indigo-100 dark:text-indigo-200 mb-10 fade-in" style="animation-delay: 0.2s;">
         Dive into the detailed implementations for each problem from the Invosa Systems Online Test.
       </p>
-      <div class="fade-in" style="animation-delay: 0.4s;">
+      <div class="fade-in-up" style="animation-delay: 0.7s;">
         <a href="{{ route('problems.index') }}"
-          class="inline-block bg-white dark:bg-gray-100 text-white dark:text-gray-900 font-bold text-lg px-12 py-4 rounded-lg shadow-xl hover:bg-opacity-90 dark:hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 ease-in-out">
-          View All Problem Solutions
+          class="inline-block bg-white text-gray-700 font-bold text-lg px-12 py-4 rounded-full shadow-xl hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 ease-in-out">
+          View All Solutions
         </a>
       </div>
     </div>
