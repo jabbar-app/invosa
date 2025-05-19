@@ -85,15 +85,15 @@
         style="animation-delay: 0.3s;">
         Welcome!
       </h1>
-      <p class="text-lg sm:text-xl text-indigo-100 dark:text-indigo-200 mb-2 fade-in-up" style="animation-delay: 0.4s;">
+      <p class="text-lg sm:text-xl text-gray-300 mb-2 fade-in-up" style="animation-delay: 0.4s;">
         Invosa Systems Online Test's solutions by
       </p>
-      <p class="text-lg sm:text-xl font-semibold mb-10 text-indigo-100 fade-in-up" style="animation-delay: 0.5s;">
+      <p class="text-lg sm:text-xl font-semibold mb-10 text-gray-100 fade-in-up" style="animation-delay: 0.5s;">
         Jabbar Ali Panggabean
       </p>
       <div class="fade-in-up" style="animation-delay: 0.7s;">
         <a href="{{ route('problems.index') }}"
-          class="inline-block bg-white dark:bg-gray-100 text-indigo-700 dark:text-indigo-800 font-bold text-lg px-12 py-4 rounded-lg shadow-xl hover:bg-opacity-90 dark:hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 ease-in-out">
+          class="inline-block bg-white text-gray-700 font-bold text-lg px-12 py-4 rounded-full shadow-xl hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 ease-in-out">
           Explore Solutions
         </a>
       </div>

@@ -1,4 +1,4 @@
-<nav class="bg-white dark:bg-gray-800 shadow-md fixed w-full z-20 top-0">
+<nav class="bg-gray-800 shadow-md fixed w-full z-20 top-0">
   <div class="max-w-7xl mx-auto py-1 px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <div class="flex items-center">
@@ -9,11 +9,11 @@
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-4">
           <a href="#developer"
-            class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 px-3 py-2 rounded-md text-sm font-medium">Developer</a>
+            class="text-gray-300 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium">Developer</a>
           <a href="#skills-showcase"
-            class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 px-3 py-2 rounded-md text-sm font-medium">Tests</a>
+            class="text-gray-300 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium">Tests</a>
           <a href="#projects"
-            class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+            class="text-gray-300 hover:text-indigo-500 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
           <a href="{{ route('problems.index') }}"
             class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium shadow-md transition-colors duration-150">
             View Test Solutions
@@ -41,11 +41,11 @@
   <div class="md:hidden hidden" id="mobile-menu">
     <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
       <a href="#developer"
-        class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium">Developer</a>
+        class="text-gray-300 hover:text-indigo-500 block px-3 py-2 rounded-md text-base font-medium">Developer</a>
       <a href="#skills-showcase"
-        class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium">Tests</a>
+        class="text-gray-300 hover:text-indigo-500 block px-3 py-2 rounded-md text-base font-medium">Tests</a>
       <a href="#projects"
-        class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+        class="text-gray-300 hover:text-indigo-500 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
     </div>
     <div class="pt-2 pb-3 border-t border-gray-200 dark:border-gray-700">
       <div class="px-2">
