@@ -2,6 +2,8 @@
 
 Welcome to the solution repository for the Invosa Systems Online Test. This project was developed by **Jabbar Ali Panggabean** to demonstrate problem-solving abilities and full-stack web development skills using Laravel, Vite, and Tailwind CSS.
 
+**➡️ Live Demo: [https://invosa.jabbar.id/](https://invosa.jabbar.id/)**
+
 ## Introduction
 
 This project contains implementations of solutions for a series of programming challenges presented in the Invosa Systems Online Test (2017 version). Each solution is designed to be functional, efficient, and presented through a clean, responsive user interface.
@@ -77,8 +79,8 @@ To run this project locally, follow these steps:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/jabbar-app/invosa.git
-    cd invosa-test-solutions
+    git clone [https://github.com/jabbar-app/invosa.git](https://github.com/jabbar-app/invosa.git)
+    cd invosa
     ```
 
 2.  **Install PHP Dependencies:**
@@ -131,11 +133,12 @@ To run this project locally, follow these steps:
 
 ## How to Use
 
-1.  Navigate to the application's root URL (e.g., `http://127.0.0.1:8000`).
-2.  You will be greeted by a landing page introducing the project and the developer.
-3.  Click on the "Explore Solutions" or "View All Problem Solutions" button to navigate to the Problems Index page.
-4.  From the Problems Index, select any solved problem to view its interactive solution.
-5.  Follow the on-screen instructions for each problem to input data and see the results.
+1.  **Access the Live Demo:** [https://invosa.jabbar.id/](https://invosa.jabbar.id/)
+2.  Alternatively, to run locally, navigate to the application's root URL (e.g., `http://127.0.0.1:8000`) after setup.
+3.  You will be greeted by a landing page introducing the project and the developer.
+4.  Click on the "Explore Solutions" or "View All Problem Solutions" button to navigate to the Problems Index page.
+5.  From the Problems Index, select any solved problem to view its interactive solution.
+6.  Follow the on-screen instructions for each problem to input data and see the results.
 
 ## Developer
 
