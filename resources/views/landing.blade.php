@@ -1,4 +1,4 @@
-@extends('layouts.app') {{-- Ensure this is your main layout file --}}
+@extends('layouts.app')
 
 @section('title', 'Jabbar Ali Panggabean - Invosa Test Solutions')
 
@@ -6,12 +6,10 @@
   <style>
     .hero-gradient-bg {
       background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ec4899 100%);
-      /* Indigo -> Purple -> Pink */
     }
 
     .dark .hero-gradient-bg {
       background: linear-gradient(135deg, #3730a3 0%, #5b21b6 50%, #be185d 100%);
-      /* Darker Indigo -> Purple -> Pink */
     }
 
     /* Animations */
@@ -65,8 +63,6 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     }
 
-
-    /* Ensure content is above pseudo-elements if any are added later */
     .relative-z-10 {
       position: relative;
       z-index: 10;
@@ -89,7 +85,7 @@
             <a href="#developer"
               class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 px-3 py-2 rounded-md text-sm font-medium">Developer</a>
             <a href="#skills-showcase"
-              class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+              class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 px-3 py-2 rounded-md text-sm font-medium">Tests</a>
             <a href="#projects"
               class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
             <a href="{{ route('problems.index') }}"
@@ -121,7 +117,7 @@
         <a href="#developer"
           class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium">Developer</a>
         <a href="#skills-showcase"
-          class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+          class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium">Tests</a>
         <a href="#projects"
           class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
       </div>
@@ -332,20 +328,16 @@
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 text-center">
         @php
-          // Key skills from resume + project stack
+
           $techs = [
               ['name' => 'PHP', 'icon' => 'fab fa-php', 'color' => 'text-indigo-500'],
               ['name' => 'Laravel', 'icon' => 'fab fa-laravel', 'color' => 'text-red-500'],
               ['name' => 'JavaScript', 'icon' => 'fab fa-js-square', 'color' => 'text-yellow-400'],
               ['name' => 'TypeScript', 'icon' => 'fas fa-code', 'color' => 'text-blue-500'],
               ['name' => 'React.js', 'icon' => 'fab fa-react', 'color' => 'text-sky-500'],
-            //   ['name' => 'Node.js', 'icon' => 'fab fa-node-js', 'color' => 'text-green-600'],
               ['name' => 'Tailwind CSS', 'icon' => 'fab fa-css3-alt', 'color' => 'text-cyan-500'],
               ['name' => 'Vite', 'icon' => 'fas fa-bolt', 'color' => 'text-yellow-500'],
-            //   ['name' => 'Docker', 'icon' => 'fab fa-docker', 'color' => 'text-blue-600'],
               ['name' => 'Git', 'icon' => 'fab fa-git-alt', 'color' => 'text-orange-500'],
-            //   ['name' => 'MySQL', 'icon' => 'fas fa-database', 'color' => 'text-blue-400'],
-            //   ['name' => 'GCP/AWS', 'icon' => 'fas fa-cloud', 'color' => 'text-amber-500'],
           ];
         @endphp
         @foreach ($techs as $index => $tech)
@@ -395,7 +387,7 @@
 @push('scripts')
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Mobile menu toggle
+
       const mobileMenuButton = document.getElementById('mobile-menu-button');
       const mobileMenu = document.getElementById('mobile-menu');
       const iconOpen = document.getElementById('icon-open');
@@ -411,19 +403,19 @@
         });
       }
 
-      // Smooth scroll for internal links
+
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
           e.preventDefault();
           const targetId = this.getAttribute('href');
           const targetElement = document.querySelector(targetId);
           if (targetElement) {
-            const offsetTop = targetElement.offsetTop - 70; // Adjust for fixed navbar height
+            const offsetTop = targetElement.offsetTop - 70;
             window.scrollTo({
               top: offsetTop,
               behavior: 'smooth'
             });
-            // Close mobile menu if open after click
+
             if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
               mobileMenuButton.click();
             }
@@ -431,13 +423,13 @@
         });
       });
 
-      // Intersection Observer for animations
+
       const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in');
       if ("IntersectionObserver" in window) {
         let observer = new IntersectionObserver((entries, observerInstance) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              entry.target.style.animationPlayState = 'running'; // Explicitly play
+              entry.target.style.animationPlayState = 'running';
               observerInstance.unobserve(entry.target);
             }
           });
@@ -446,7 +438,7 @@
         });
 
         animatedElements.forEach(el => {
-          // Set initial state for JS-controlled animation play state
+
           el.style.animationPlayState = 'paused';
           observer.observe(el);
         });
