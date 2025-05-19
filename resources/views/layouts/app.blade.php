@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth dark">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
 
 <head>
   <meta charset="utf-8">
@@ -20,15 +20,43 @@
     rel="stylesheet">
 
   <style>
+    html {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      @apply bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(100, 116, 139, 0.5);
+      border-radius: 4px;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background-color: rgba(148, 163, 184, 0.5);
     }
   </style>
 
   @stack('styles')
+
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)')
+        .matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+
 </head>
 
-<body class="font-plus-jakarta-sans antialiased bg-gray-900 text-gray-200 leading-normal tracking-tight">
+<body
+  class="font-figtree antialiased bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 leading-normal tracking-tight">
 
   <div id="app-layout-content" class="min-h-screen flex flex-col">
     <main class="flex-grow">
