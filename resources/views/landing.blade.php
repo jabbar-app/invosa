@@ -75,7 +75,7 @@
   @include('layouts.navbar')
 
   {{-- Hero Section --}}
-  <header class="bg-dark text-white pt-32 pb-20 md:pt-48 md:pb-32 flex items-center justify-center min-h-screen">
+  <header class="bg-gray-900 text-white pt-32 pb-20 md:pt-48 md:pb-32 flex items-center justify-center min-h-screen">
     <div class="text-center max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative-z-10">
       <div class="mb-8 fade-in" style="animation-delay: 0.1s;">
         <img src="{{ asset('assets/images/jab-profpic.png') }}" alt="Jabbar"
@@ -293,7 +293,7 @@
   </section>
 
   {{-- Final Call to Action Section --}}
-  <section class="py-16 sm:py-24 bg-dark text-white">
+  <section class="py-16 sm:py-24 bg-gray-900 text-white">
     <div class="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative-z-10">
       <h2 class="text-3xl sm:text-4xl font-bold mb-6 fade-in">Explore the Solutions</h2>
       <p class="text-lg sm:text-xl text-indigo-100 dark:text-indigo-200 mb-10 fade-in" style="animation-delay: 0.2s;">
@@ -301,7 +301,7 @@
       </p>
       <div class="fade-in" style="animation-delay: 0.4s;">
         <a href="{{ route('problems.index') }}"
-          class="inline-block bg-white dark:bg-gray-100 text-indigo-700 dark:text-indigo-800 font-bold text-lg px-12 py-4 rounded-lg shadow-xl hover:bg-opacity-90 dark:hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 ease-in-out">
+          class="inline-block bg-white dark:bg-gray-100 text-white dark:text-gray-900 font-bold text-lg px-12 py-4 rounded-lg shadow-xl hover:bg-opacity-90 dark:hover:bg-opacity-90 transform hover:scale-105 transition-transform duration-300 ease-in-out">
           View All Problem Solutions
         </a>
       </div>
@@ -309,13 +309,10 @@
   </section>
 
   {{-- Footer --}}
-  <footer class="bg-gray-800 dark:bg-black text-gray-400 dark:text-gray-500 py-12">
+  <footer class="bg-black text-gray-400 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div class="flex justify-center items-center mb-4">
-        <div class="w-10 h-10 bg-indigo-500 bg-opacity-80 rounded-full flex items-center justify-center">
-          <span class="text-xl font-bold text-white">JP</span>
-        </div>
-        <span class="ml-3 text-xl font-bold text-white">Jabbar Ali Panggabean</span>
+        <img src="{{ asset('assets/images/jab-logo.svg') }}" alt="Jabbar" class="h-10">
       </div>
       <p class="text-sm">Solutions Showcase for Invosa Systems Online Test.</p>
       <p class="mt-1 text-xs">Contact: box@jabbar.id | Portfolio: <a href="http://link.jabbar.id/" target="_blank"
